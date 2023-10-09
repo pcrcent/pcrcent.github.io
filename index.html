@@ -21,7 +21,25 @@
     }
   </style>
   <center>
-        <h1>Owner</h1>
+        <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Text Effect</title>
+  <style>
+    .rainbow-text {
+      background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><span class="rainbow-text">owner</span></h1>
+</body>
     </center> 
     <p align="center"</p>
 <iframe
@@ -33,7 +51,25 @@
     src="https://widgets.vendicated.dev/user?id=1149138392056078368&theme=dark&banner=true&full-banner=true&rounded-corners=true&discord-icon=false&badges=true&guess-nitro=true&background-color=%23000000&foreground-color=%23ffffff"
 ></iframe>
        <center>
-        <h1>Developer</h1>
+        <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Text Effect</title>
+  <style>
+    .rainbow-text {
+      background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 36px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><span class="rainbow-text">Developer</span></h1>
+</body>
     </center> 
 <p align="center"</p>
 <iframe
@@ -44,54 +80,6 @@
     sandbox="allow-scripts"
     src="https://widgets.vendicated.dev/user?id=985659971872116776&theme=dark&banner=true&full-banner=true&rounded-corners=true&discord-icon=false&badges=true&guess-nitro=true&background-color=%23000000&foreground-color=%23ffffff"
 ></iframe>
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    .flashlight {
-      position: fixed;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background: radial-gradient(circle, transparent 70%, black 70%);
-      pointer-events: none;
-      mix-blend-mode: difference;
-      animation: flicker 0.1s infinite alternate;
-      display: none;
-    }
-
-    @keyframes flicker {
-      0% {
-        opacity: 0.8;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var flashlight = document.querySelector('.flashlight');
-
-      document.addEventListener('mousemove', function(event) {
-        var x = event.clientX - flashlight.offsetWidth / 2;
-        var y = event.clientY - flashlight.offsetHeight / 2;
-        flashlight.style.left = x + 'px';
-        flashlight.style.top = y + 'px';
-        flashlight.style.display = 'block';
-      });
-    });
-  </script>
-</head>
-<body>
-  <div class="flashlight"></div>
-</body>
 </style>
 </head>
 </html>
