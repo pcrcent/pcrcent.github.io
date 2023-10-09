@@ -15,7 +15,7 @@
 <body style="background-color:rgb(0, 0, 0);">
   <style>
     body {
-      background-image: url("https://cdn.discordapp.com/attachments/1149146169235226655/1160798608401104906/thumb-1920-1329016.png?ex=6535f8f2&is=652383f2&hm=7a0808062d908ba21124a5d9ea962a81670b6dc710c9b4fd070af8f945f4de29&");
+      background-image: url("https://cdn.discordapp.com/attachments/1149146169235226655/1160800108292620458/8954256a-cc48-4d73-a863-5c8ebe3c426c.png?ex=6535fa58&is=65238558&hm=46f73497ba3f0b5375ce3cf148c4f65e7fd3485f2bdd6ad8f89e5798db7d2673&");
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -44,10 +44,54 @@
     sandbox="allow-scripts"
     src="https://widgets.vendicated.dev/user?id=985659971872116776&theme=dark&banner=true&full-banner=true&rounded-corners=true&discord-icon=false&badges=true&guess-nitro=true&background-color=%23000000&foreground-color=%23ffffff"
 ></iframe>
-   <footer>
-<a href="https://discord.gg/jTMEaFKx4p">Discord</a>
-<p>@pcrcent & @scoobyjs all rights reserved</p>
-</footer>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .flashlight {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, transparent 70%, black 70%);
+      pointer-events: none;
+      mix-blend-mode: difference;
+      animation: flicker 0.1s infinite alternate;
+      display: none;
+    }
+
+    @keyframes flicker {
+      0% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var flashlight = document.querySelector('.flashlight');
+
+      document.addEventListener('mousemove', function(event) {
+        var x = event.clientX - flashlight.offsetWidth / 2;
+        var y = event.clientY - flashlight.offsetHeight / 2;
+        flashlight.style.left = x + 'px';
+        flashlight.style.top = y + 'px';
+        flashlight.style.display = 'block';
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="flashlight"></div>
+</body>
 </style>
 </head>
 </html>
